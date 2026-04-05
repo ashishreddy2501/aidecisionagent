@@ -153,8 +153,13 @@ def run_agent(query):
 # STREAMLIT UI
 # ==============================
 st.set_page_config(page_title="Agentic AI Assistant", layout="wide")
-st.title("🤖 Agentic AI Decision Assistant")
-st.caption("Created by S Ashish Reddy")
+st.title("Agentic AI Decision Assistant")
+st.markdown("""
+A dynamic AI agent that performs decision-making and task routing using LangGraph based workflows powered by OpenAI LLM.
+""")
+st.text("Created by S Ashish Reddy")
+
+#st.caption("Created by S Ashish Reddy")
 
 query = st.text_input("Enter your question:", placeholder="Should I invest in gold right now?")
 
